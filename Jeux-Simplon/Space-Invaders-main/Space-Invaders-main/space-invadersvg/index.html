@@ -1,0 +1,54 @@
+<style>
+
+    @font-face {
+    font-family: "Arcade";
+        src: url("fonts/ARCADE_I.TTF");
+    }
+
+    body {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        font-family: Arcade, sans-serif;
+        font-size: 14px;
+    }
+
+    #back_arrow {
+        position: absolute;
+        top: 20;
+        right: 20;
+        height: 20px;
+        width: auto;
+        z-index: 12;
+    }
+
+    #cheat {
+        display: none;
+        position: absolute;
+        bottom: 0;
+        left: 30;
+        color: grey;
+
+    }
+
+</style>
+<a href="../index.html"><img id="back_arrow"src="img/backarrow.png" alt="back arrow"></a>
+<div style="position: relative;" id="parentDiv">
+    <p style="position: absolute; z-index: 10; color: white; left: 10px; top: 10px; margin: 0;">
+
+        <span>Score:</span> <span id="scoreEl">0</span>
+
+    </p>
+
+    <canvas></canvas>
+</div>
+<p id="cheat">cheatcode = "alcool"</p>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"
+  integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+></script>
+<script src="./script.js"></script>

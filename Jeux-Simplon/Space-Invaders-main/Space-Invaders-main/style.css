@@ -1,0 +1,296 @@
+/**body{
+    margin: 0;
+    padding:0 ;
+}
+
+video#bgvid {
+    position: fixed; right: 0; bottom: 0;
+    min-width: 100%; min-height: 100%;
+    width: auto; height: auto; z-index: -100;
+
+    background-size: cover;
+  }**/
+  @font-face {
+    font-family: "Arcade";
+        src: url("fonts/ARCADE_I.TTF");
+    }
+
+
+
+  #background-video {
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    
+    }
+
+    
+    h1, h2, #btnVideo{
+    
+    color: white;
+    
+    font-family: Trebuchet MS;
+    
+    font-weight: bold;
+    
+    text-align: center;
+    
+    }
+    
+    h1 {
+    margin-top: 50px;
+    font-size: 6rem;
+    font-family: 'Monoton', cursive;
+    color: #fff; 
+    animation: neon6 1.5s ease-in-out infinite alternate;
+    letter-spacing: 20px;
+    
+    }
+
+
+    @keyframes neon1 {
+        from {
+          text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff1177,
+            0 0 70px #ff1177, 0 0 80px #ff1177, 0 0 100px #ff1177, 0 0 150px #ff1177;
+        }
+        to {
+          text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff1177,
+            0 0 35px #ff1177, 0 0 40px #ff1177, 0 0 50px #ff1177, 0 0 75px #ff1177;
+        }
+      }
+      
+      @keyframes neon2 {
+        from {
+          text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228dff,
+            0 0 70px #228dff, 0 0 80px #228dff, 0 0 100px #228dff, 0 0 150px #228dff;
+        }
+        to {
+          text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228dff,
+            0 0 35px #228dff, 0 0 40px #228dff, 0 0 50px #228dff, 0 0 75px #228dff;
+        }
+      }
+      
+      @keyframes neon3 {
+        from {
+          text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ffdd1b,
+            0 0 70px #ffdd1b, 0 0 80px #ffdd1b, 0 0 100px #ffdd1b, 0 0 150px #ffdd1b;
+        }
+        to {
+          text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ffdd1b,
+            0 0 35px #ffdd1b, 0 0 40px #ffdd1b, 0 0 50px #ffdd1b, 0 0 75px #ffdd1b;
+        }
+      }
+      
+      @keyframes neon4 {
+        from {
+          text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #b6ff00,
+            0 0 70px #b6ff00, 0 0 80px #b6ff00, 0 0 100px #b6ff00, 0 0 150px #b6ff00;
+        }
+        to {
+          text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #b6ff00,
+            0 0 35px #b6ff00, 0 0 40px #b6ff00, 0 0 50px #b6ff00, 0 0 75px #b6ff00;
+        }
+      }
+      
+      @keyframes neon5 {
+        from {
+          text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff9900,
+            0 0 70px #ff9900, 0 0 80px #ff9900, 0 0 100px #ff9900, 0 0 150px #ff9900;
+        }
+        to {
+          text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff9900,
+            0 0 35px #ff9900, 0 0 40px #ff9900, 0 0 50px #ff9900, 0 0 75px #ff9900;
+        }
+      }
+      
+      @keyframes neon6 {
+        from {
+          text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de,
+            0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+        }
+        to {
+          text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff00de,
+            0 0 35px #ff00de, 0 0 40px #ff00de, 0 0 50px #ff00de, 0 0 75px #ff00de;
+        }
+      }
+    
+    h2 { 
+        font-size: 3rem;
+        font-family: Arcade, sans-serif;
+        font-weight: bold;
+        /*font-family: "murmansk";*/
+        color: #000;
+     }
+    
+    #btnVideo{
+    font-size: 1.5rem;
+    background: 0;
+    border: 0;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    }
+
+
+    :root{
+        --color-green:hsla(176,100%,44%,1);
+        --color-red:hsla(337,100%,50%);
+        --color-yellow:hsla(43,100%,50%);
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+/* VIDEO game */
+button {
+  margin: 20px;
+  
+}
+.custom-btn {
+  color: #000;
+  width: 130px;
+  height: 40px;
+  padding: 10px 25px;
+  font-family: Arcade, sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  font-size: 25px;
+}
+
+.custom-btn i{
+    margin-left: 3px;
+    font-size: 16px;
+    vertical-align: middle;
+}
+
+
+.btn-12{
+    color: #000;
+    position: relative;
+    right: 20px;
+    bottom: 20px;
+    border:none;
+    width: 130px;
+    height: 40px;
+    line-height: 40px;
+    -webkit-perspective: 230px;
+    perspective: 230px;
+  }
+  .btn-12 span {
+    display: block;
+    position: absolute;
+    width: 130px;
+    height: 40px;
+    border: 1px solid #ff00de;
+    box-shadow: 0 0 5px #ff00de, 0 0 5px #ff00de inset;
+    margin:0;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+  }
+  .btn-12 span:nth-child(1) {
+    box-shadow: 0 0 5px #ff00de, 0 0 5px #ff00de inset;
+    -webkit-transform: rotateX(90deg);
+    -moz-transform: rotateX(90deg);
+    transform: rotateX(90deg);
+    -webkit-transform-origin: 50% 50% -20px;
+    -moz-transform-origin: 50% 50% -20px;
+    transform-origin: 50% 50% -20px;
+  }
+  .btn-12 span:nth-child(2) {
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    -webkit-transform-origin: 50% 50% -20px;
+    -moz-transform-origin: 50% 50% -20px;
+    transform-origin: 50% 50% -20px;
+  }
+  .btn-12:hover span:nth-child(1) {
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+  }
+  .btn-12:hover span:nth-child(2) {
+    background: #ff00de;
+    color: #ff00de;
+    box-shadow: 0 0 5px #ff00de, 0 0 5px #ff00de inset;
+    -webkit-transform: rotateX(-90deg);
+    -moz-transform: rotateX(-90deg);
+    transform: rotateX(-90deg);
+  }
+
+  .game-button{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+    height: 500px;
+    align-items: end;
+  }
+
+  .game-button ul{
+      list-style: none;
+      margin: 0;
+      padding: 0;
+  }
+
+  #background-game1 {
+    height: 282px;
+    width: 500px;
+    object-fit: cover;
+    
+    
+    }
+.jeux-1 {
+    text-align: center; 
+    font-family: "arial";
+    line-height: 40px;
+    
+
+}
+.jeux-1 i{
+    font-size: 16px;
+    letter-spacing: 5px;
+    font-weight: bold;
+    color:#000;
+    
+}
+.jeux-1 li{
+    font-size: 20px;
+    letter-spacing: 5px;
+    font-weight: bold;
+    color: #000;
+}
+.jeux-2{
+    text-align: center;
+    font-family: "arial";
+    line-height: 40px;
+    
+}
+
+.jeux-2 i{
+    font-size: 16px;
+    letter-spacing: 5px;
+    font-weight: bold;
+    color:#000;
+    
+}
+.jeux-2 li{
+    font-size: 20px;
+    letter-spacing: 5px;
+    font-weight: bold;
+    color: #000;
+}
+

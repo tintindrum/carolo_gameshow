@@ -1,0 +1,64 @@
+ @font-face {
+        font-family: "Arcade";
+            src: url("../../../fonts/ARCADE_I.TTF");
+        }
+   
+    
+body{
+    color: white; 
+    font-family: Arcade, sans-serif;
+    background-image: url(../img/background-black.png);
+   
+}
+.divcenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.grid{
+    width: 1202px;
+    display: flex;
+    flex-wrap: wrap; 
+}
+
+.grid div {
+    width: 60px;
+    height: 60px;
+}
+
+.invader{
+    background-image: url(../img/invader.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+.shooter{
+    background-image: url(../img/spaceship.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+.laser {
+    background-image: url(../img/pixel_laser_yellow.svg);
+}
+
+.boom{
+    background-color: red;
+}
+.results{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#back_arrow {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    height: 20px;
+    width: auto;
+    z-index: 12;
+}
