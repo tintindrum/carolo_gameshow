@@ -9,8 +9,8 @@ var compteur = 0 ;
 
 //Nombres Aléatoires Début du jeu
 
-random1 = Math.random() * 100 << 0; //Pour génerer des nombres entre 0 et 11
-random2 = Math.random() * 100 << 0; //Pour génerer des nombres entre 0 et 11
+random1 = Math.random() * 100 << 0; //Pour génerer des nombres entre 0 et 100
+random2 = Math.random() * 100 << 0; //Pour génerer des nombres entre 0 et 100
 console.log(random1);
 console.log(random2);
 //Inserer les nombres au hazard dans les variables nb1 et nb2
@@ -27,8 +27,8 @@ function verifier(){
       Message.innerHTML = "Correcte."
       //créer d'autres nombres aléatoire
             //Nombres Aléatoires Début du jeu
-            random1 = Math.random() * 100 << 0; //Pour génerer des nombres entre 0 et 
-            random2 = Math.random() * 100 << 0; //Pour génerer des nombres entre 0 et 
+            random1 = Math.random() * 100 << 0; //Pour génerer des nombres entre 0 et 100
+            random2 = Math.random() * 100 << 0; //Pour génerer des nombres entre 0 et 100
             console.log(random1);
             console.log(random2);
             //Inserer les nombres au hazard dans les variables nb1 et nb2
